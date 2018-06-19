@@ -1,0 +1,74 @@
+.fc {
+    direction: ltr;
+    text-align: left;
+}
+
+.fc-toolbar.fc-header-toolbar {
+    margin-bottom: 1em;
+}
+
+.fc th, .fc-basic-view td.fc-week-number,
+.fc-icon, .fc-toolbar {
+    text-align: center;
+}
+
+.fc-toolbar.fc-header-toolbar {
+    margin-bottom: 1em;
+}
+
+.fc th, .fc-basic-view td.fc-week-number,
+.fc-icon, .fc-toolbar {
+    text-align: center;
+}
+
+.fc-icon, .fc-toolbar .fc-center {
+    display: inline-block;
+}
+
+.fc .fc-toolbar > * > :first-child {
+    margin-left: 0;
+}
+
+.fc .fc-toolbar > * > * {
+    float: left;
+    margin-left: .75em;
+}
+
+.fc-toolbar h2 {
+    margin: 0;
+}
+
+.fc-clear {
+    clear: both;
+}
+
+table {
+    table-layout: fixed;
+    border-right: none;
+    border-left: none;
+}
+
+table th {
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+table th:first-child,
+table td:first-child {
+    border-left: none;
+}
+
+table th:last-child,
+table td:last-child {
+    border-right: none;
+}
+
+table .day-number {
+    text-align: right;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+table td {
+    min-height: 30px;
+}

@@ -1,0 +1,27 @@
+<div class="box box-primary">
+  <div class="box-body no-padding">
+    <div class="fc fc-unthemed fc-ltr">
+      <div class="fc-view-container">
+        <div class="fc-view fc-month-view fc-basic-view">
+          <table class="table table-bordered">
+            <thead>
+              <th *ngFor="let day of days">{{day.name}}</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td *ngFor="let day of days">
+                  <div class="events-container" [dragula]='"events"' [dragulaModel]="day.events">
+                    <div class="event bg-{{event.color}}" *ngFor="let event of day.events">
+                      {{event.text}}
+                      <span class="fa fa-trash" (click)="onDeleteDayEvent(day, event)"></span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="box box-solid">
+  <div class="box-header with-border">
+    <h4 class="box-title">Draggable Events</h4>
+  </div>
+  <div class="box-body">
+    <div class="events-container" [dragula]='"events"' [dragulaModel]="stack">
+      <div
+        *ngFor="let event of stack"
+        class="event bg-{{event.color}}"
+      >
+        {{event.text}}
+        <span class="fa fa-trash" (click)="onDeleteEvent(event)"></span>
+      </div>
+    </div>
+  </div>
+</div>

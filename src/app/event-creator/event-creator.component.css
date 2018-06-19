@@ -1,0 +1,31 @@
+.fc-color-picker {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fc-color-picker > li {
+    float: left;
+    font-size: 30px;
+    margin-right: 5px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.fc-color-picker > li .fa:hover {
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.fc-color-picker > li .fa {
+    -webkit-transition: -webkit-transform linear .3s;
+    -moz-transition: -moz-transform linear .3s;
+    -o-transition: -o-transform linear .3s;
+    transition: transform linear .3s;
+}
+
+.color-btn {
+    transition: all linear .3s;
+}
